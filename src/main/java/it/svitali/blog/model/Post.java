@@ -12,51 +12,51 @@ public class Post {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer Id;
+	private Integer id;
 	
-	private String Titolo;
+	private String titolo;
 	
-	private String Contenuto;
-//	private String User;
-//	private String Categoria;
-//	private String Media;
+	private String contenuto;
+//	private String user;
+//	private String categoria;
+//	private String media;
 	
-	private LocalDateTime DataPubblicazione;
+	private LocalDateTime dataPubblicazione;
 	
 	//COSTRUTTORE
 	
 	public Post () {
-		DataPubblicazione = LocalDateTime.now();
+		dataPubblicazione = LocalDateTime.now();
 	}
 	
 	
     //GETTER e SETTER
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(Integer id) {
-		Id = id;
+		id = id;
 	}
 
 	public String getTitolo() {
-		return Titolo;
+		return titolo;
 	}
 
 	public void setTitolo(String titolo) {
-		Titolo = titolo;
+		titolo = titolo;
 	}
 
 	public String getContenuto() {
-		return Contenuto;
+		return contenuto;
 	}
 
 	public void setContenuto(String contenuto) {
-		Contenuto = contenuto;
+		contenuto = contenuto;
 	}
 
 	public LocalDateTime getDataPubblicazione() {
-		return DataPubblicazione;
+		return dataPubblicazione;
 	}
 
 

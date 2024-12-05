@@ -55,6 +55,14 @@
 	<!-- fine navbar-->
 <h1>Hello World!</h1>
 
+<!--inizio card-->
+<ul>
+  <li th:each="post : listaPost">
+    th:text=${post.titolo} 
+  </li>
+</ul>
+<!-- fine card-->
+
 <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 
